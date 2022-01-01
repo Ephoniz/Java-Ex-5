@@ -32,4 +32,10 @@ public class User {
     public List<Student> getStudentsList() {
         return studentsList;
     }
+
+    public void registration(String username, String password, String email) {
+    }
+
+    public void login(String username, String password){
+    }
 }
