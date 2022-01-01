@@ -8,7 +8,7 @@ public class Student {
     String country;
     String phone_number;
     String email;
-    Boolean presence;
+    String presence;
     Boolean transfer;
     String photo;
     String curriculumVitae;
@@ -16,7 +16,7 @@ public class Student {
     User usersObj;
     List<UserTags> userTagsList;
 
-    public Student(String fullname, String city, String country, String phone_number, String email, Boolean presence, Boolean transfer, String photo, String curriculumVitae) {
+    public Student(String fullname, String city, String country, String phone_number, String email, String presence, Boolean transfer, String photo, String curriculumVitae) {
 
         this.fullname = fullname;
         this.city = city;
@@ -49,7 +49,7 @@ public class Student {
         return email;
     }
 
-    public Boolean getPresence() {
+    public String getPresence() {
         return presence;
     }
 
@@ -71,5 +71,22 @@ public class Student {
 
     public List<UserTags> getUserTagsList() {
         return userTagsList;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "fullname='" + fullname + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                ", email='" + email + '\'' +
+                ", presence='" + presence + '\'' +
+                ", transfer=" + transfer +
+                ", photo='" + photo + '\'' +
+                ", curriculumVitae='" + curriculumVitae + '\'' +
+                ", usersObj=" + usersObj +
+                ", userTagsList=" + userTagsList +
+                '}';
     }
 }

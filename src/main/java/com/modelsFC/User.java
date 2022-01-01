@@ -38,4 +38,14 @@ public class User {
 
     public void login(String username, String password){
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "email=" + email + '\'' +
+                "username='" + username + '\'' +
+                ", profile_img='" + profile_img + '\'' +
+                ", studentsList=" + studentsList +
+                '}';
+    }
 }

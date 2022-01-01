@@ -18,4 +18,12 @@ public class Tag {
     public List<UserTags> getUserTagsList() {
         return userTagsList;
     }
+
+    @Override
+    public String toString() {
+        return "Tag{" +
+                "name='" + name + '\'' +
+                ", userTagsList=" + userTagsList +
+                '}';
+    }
 }
