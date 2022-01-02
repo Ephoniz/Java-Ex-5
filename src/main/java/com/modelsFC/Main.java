@@ -23,9 +23,9 @@ public class Main {
         candidatos.imprimeCiudadesTop();
         candidatos.imprimePaisesTop();
 
-        System.out.println(candidatos.totalRemotos());
-        System.out.println(candidatos.totalPosibilidadTraslado());
-        System.out.println(candidatos.totalPresencialSinTraslado());
+        System.out.println("Candidatos totales con opción remota: " + candidatos.totalRemotos());
+        System.out.println("Candidatos totales con opcion de traslado: " + candidatos.totalPosibilidadTraslado());
+        System.out.println("Candidatos con opción presencial sin traslado: " + candidatos.totalPresencialSinTraslado());
 
         System.out.println(candidatos.searchEmail("email@gmail.com").toString());
     }
